@@ -4,7 +4,6 @@ import fs from "fs";
 import https from "https";
 import mongoose from "mongoose";
 
-
 //Importing enviroment variables
 dotenv.config();
 
@@ -19,9 +18,7 @@ const MONGO_URI="mongodb://localhost:27017/PhotoShare"
 app.use(express.json());
 
 //Test route
-app.get("/", (req, res) => {
-    res.send("Welcome to the PhotoShare API");
-});
+app.use('/api', routes);
 
 //Load SSL certificates
 const sslOptions = {
