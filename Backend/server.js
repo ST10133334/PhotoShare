@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 import https from "https";
 import mongoose from "mongoose";
+import routes from './routes/index.js'
 
 //Importing enviroment variables
 dotenv.config();
